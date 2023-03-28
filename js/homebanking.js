@@ -7,7 +7,7 @@ var cuentaAmiga2 = 7654321;
 
 //Ejecución de las funciones que actualizan los valores de las variables en el HTML.
 window.onload = function () {
-    iniciarSesion();
+    // iniciarSesion();
     cargarNombreEnPantalla();
     actualizarSaldoEnPantalla();
     actualizarLimiteEnPantalla();
@@ -156,18 +156,18 @@ function transferirDinero() {
     actualizarSaldoEnPantalla();
 }
 
-function iniciarSesion() {
-    var codVerificacion = '123456';
-    var nombreUsuario = "Aguirre Tadeo";
-    var codigoIngresado = prompt('Ingresar un Codigo de verificacion');
-    if (codVerificacion == codigoIngresado) {
-        return alert('Ingresaste a tu Homebanking ' + nombreUsuario + ' ya puedes realizar operaciones.');
-    }
-    else {
-        alert('Codigo de verificacion incorrecto, tu dinero a sido retenido por cuestiones de seguridad');
-        saldoCuenta = 0;
-    }
-}
+// function iniciarSesion() {
+//     var codVerificacion = '123456';
+//     var nombreUsuario = "Aguirre Tadeo";
+//     var codigoIngresado = prompt('Ingresar un Codigo de verificacion');
+//     if (codVerificacion == codigoIngresado) {
+//         return alert('Ingresaste a tu Homebanking ' + nombreUsuario + ' ya puedes realizar operaciones.');
+//     }
+//     else {
+//         alert('Codigo de verificacion incorrecto, tu dinero a sido retenido por cuestiones de seguridad');
+//         saldoCuenta = 0;
+//     }
+// }
 
     
 
